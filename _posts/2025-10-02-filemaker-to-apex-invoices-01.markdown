@@ -95,6 +95,8 @@ For example, since one Invoice will have one Client and one Staff, we need to ad
 
 Also, rename the Invoices `date` field to `invoice_date`. Date is a reserved name in SQL.
 
+Here is the full [Quick SQL file](/assets/source/filemaker_to_apex_invoices/fm_invoice_quicksql.txt).
+
 When done, click "Review and Run". 
 
 On the next screen, click "Create" to save the SQL DDL Script. Name it "FM Invoices". Then click "Run" when you are ready.
