@@ -29,34 +29,32 @@ Then, run the following Calculation from the Data Viewer:
 
 ```c
 Let ( [
- fields = FieldNames ( Get ( FileName ) ; Get ( LayoutName ) );
- field_count = ValueCount ( fields )
+    fields = FieldNames ( Get ( FileName ) ; Get ( LayoutName ) );
+    field_count = ValueCount ( fields )
 ];
-    // Output the table name
-    Substitute(Lower( Get ( LayoutTableName ) ); " "; "_") & ¶ & 
-    // Loop to build the fields list
-    While (
-    // Initialize the fields list
- [counter = 1 ; result = "   " ] ;
-    // 
- counter ≤ field_count ; [ 
- result = result & 
-    // Get the field name
-    Lower(Substitute(GetValue(fields;counter);" ";"_")) & " " & 
-    // Append the field type
-    Substitute( 
-        Lower(MiddleWords ( FieldType(Get(FileName);GetValue(fields;counter)); 2 ; 1)) ;
-        // Convert FileMaker types to Oracle
- ["text";"vc225"];["container";"blob"]
- ) & 
-    // Separate with return
-    "¶   " ; 
-    // Increate the counter
- counter = counter + 1 
- ];
-    // Boom
- result
- )
+    // Output the table name
+    Substitute(Lower( Get ( LayoutTableName ) ); " "; "_") & ¶ & 
+    // Loop to build the fields list
+    While (
+        // Initialize the fields list
+        [counter = 1 ; result = "   " ] ;
+        counter ≤ field_count ; [ 
+        result = result & 
+        // Get the field name
+        Lower(Substitute(GetValue(fields;counter);" ";"_")) & " " & 
+        // Append the field type
+        Substitute( 
+            Lower(MiddleWords ( FieldType(Get(FileName);GetValue(fields;counter)); 2 ; 1)) ;
+            // Convert FileMaker types to Oracle
+            ["text";"vc225"];["container";"blob"]
+        ) & 
+        // Separate with return
+        "¶   " ; 
+        // Increase the counter
+        counter = counter + 1 ];
+        // Boom
+        result
+    )
 )
 ```
 The Calculation will produce the Quick SQL text for the Layout's table with all the fields placed on the Layout:
@@ -65,7 +63,7 @@ The Calculation will produce the Quick SQL text for the Layout's table with all 
 
 Copy each output to a text file so it's easier to import everything into Quick SQL.
 
-> Please note we are defaulting all text fields to `Varchar2(225)`. In a real scenario, we would take the Quick SQL output and modify the lengths accordingly. However, for this tutorial, I will leave them as 225.
+Please note we are defaulting all text fields to `Varchar2(225)`. In a real scenario, we would take the Quick SQL output and modify the lengths accordingly. However, for this tutorial, I will leave them as 225.
 
 Now log in to the Oracle APEX App Builder and navigate to SQL Workshop -> Utilities -> Quick SQL.
 
@@ -79,9 +77,9 @@ Switch on "Add Primary Key", use SYS_GUID for the Population Method, and switch 
 
 ![](/assets/img/filemaker_to_apex_invoices/quicksql_settings_01.png)
 
-> We prefix the primary keys with the table name, so for example, we will get client_id, staff_id, invoice_id, etc. This naming convention makes it easier to write SQL queries than if all primary keys were named 'id' (or 'PrimaryKey').
+We prefix the primary keys with the table name, so for example, we will get `client_id`, `staff_id`, `invoice_id`, etc. This naming convention makes it easier to write SQL queries than if all primary keys were named `id` (or `PrimaryKey`).
 
-Next, check "Include Audit Columns".
+Next, check "Include Audit Columns":
 
 ![](/assets/img/filemaker_to_apex_invoices/quicksql_settings_02.png)
 
@@ -93,11 +91,13 @@ Now paste the Quick SQL produced by the FileMaker calculation. Take a moment to 
 
 ![](/assets/img/filemaker_to_apex_invoices/quicksql_01.png)
 
-For example, since one Invoice will have one Client and one Staff, we need to add the foreign keys `client_id` and `staff_id`. You do not have to specify the data type; Quick SQL will automatically generate the columns with the proper data types and Constraints.
+For example, since one Invoice will have one Client and one Staff, we need to add the foreign keys `client_id` and `staff_id`. Do not have to specify the data type; Quick SQL will automatically generate the columns with the proper data types and Constraints.
 
-Also, rename the Invoices `date` column to `invoice_date`
+Also, rename the Invoices `date` field to `invoice_date`. Date is a reserved name in SQL.
 
-When done, click "Review and Run". From here, click "Create" to save the SQL DDL Script. Name it "FM Invoices". Then click "Run" when you are ready.
+When done, click "Review and Run". 
+
+On the next screen, click "Create" to save the SQL DDL Script. Name it "FM Invoices". Then click "Run" when you are ready.
 
 ![](/assets/img/filemaker_to_apex_invoices/sql_01.png)
 
