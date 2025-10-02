@@ -91,7 +91,7 @@ Now paste the Quick SQL produced by the FileMaker calculation. Take a moment to 
 
 ![](/assets/img/filemaker_to_apex_invoices/quicksql_01.png)
 
-For example, since one Invoice will have one Client and one Staff, we need to add the foreign keys `client_id` and `staff_id`. Do not have to specify the data type; Quick SQL will automatically generate the columns with the proper data types and Constraints.
+For example, since one Invoice will have one Client and one Staff, we need to add the foreign keys `client_id` and `staff_id`. You do not have to specify the data type; Quick SQL will automatically generate the columns with the proper data types and Constraints.
 
 Also, rename the Invoices `date` field to `invoice_date`. Date is a reserved name in SQL.
 
