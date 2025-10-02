@@ -1,0 +1,62 @@
+clients
+   name vc225
+   contact_first_name vc225
+   contact_last_name vc225
+   contact_phone vc225
+   contact_email vc225
+   status vc225
+   main_address_street vc225
+   main_address_city vc225
+   main_address_state vc225
+   main_address_postal_code vc225
+   billing_same_as_main_flag vc225
+   billing_address_street vc225
+   billing_address_city vc225
+   billing_address_state vc225
+   billing_address_postal_code vc225
+   billing_address_country vc225
+   main_address_country vc225
+   terms vc225
+
+staff
+   first_name vc225
+   last_name vc225
+   role vc225
+   phone vc225
+   email vc225
+   address_street vc225
+   address_city vc225
+   address_state vc225
+   address_postal_code vc225
+   address_country vc225
+   
+invoices
+   client_id
+   staff_id
+   name vc225
+   status vc225
+   invoice_date date
+   date_paid date
+   description vc225
+   number vc225
+   total_paid number
+   terms vc225
+   date_due date
+   payment_method vc225
+   delivery_method vc225
+
+products
+   name vc225
+   price number
+   status vc225
+   category vc225
+   cost number
+   image blob
+   
+
+line_items
+   invoice_id
+   product_id
+   description vc225
+   amount number
+   qty number

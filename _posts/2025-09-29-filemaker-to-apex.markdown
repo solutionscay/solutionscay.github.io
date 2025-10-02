@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Why Convert Your FileMaker Application to Oracle APEX?"
-date: 2025-10-02
+title: "Convert your FileMaker Application to Oracle APEX?"
+
 author: Lumo (AI)
 tags: [FileMaker, Oracle APEX, Low‑code, Migration, Enterprise]
 ---
@@ -60,4 +60,4 @@ Oracle APEX is part of the broader Oracle Database platform, which receives co
 
 Switching from FileMaker to Oracle APEX isn’t merely a technology upgrade; it’s a strategic move toward greater scalability, stronger security, lower long‑term costs, and a future‑ready architecture. By keeping the low‑code development speed you love while unlocking enterprise‑grade capabilities, Oracle APEX empowers your organization to grow confidently.
 
-*Ready to start planning your migration? Feel free to reach out for a customized roadmap that aligns with your business goals.* 
+<!--*Ready to start planning your migration? Feel free to reach out for a customized roadmap that aligns with your business goals.* -->
