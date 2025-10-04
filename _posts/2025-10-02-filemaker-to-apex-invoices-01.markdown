@@ -144,4 +144,4 @@ Finally, navigate to SQL Workshop -> Object Browser to view all your newly creat
 
 ![](/assets/img/filemaker_to_apex_invoices/object_browser_01.png)
 
-In the following tutorial, I will guide you through the process of creating an APEX app using these new tables.
+In the following tutorial, I will guide you through the process of creating an APEX app using these new tables. [Check it out](https://solutionscay.github.io/filemaker/apex/sql/2025/10/04/filemaker-to-apex-invoices-02.html).
