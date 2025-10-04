@@ -1,0 +1,99 @@
+INSERT INTO clients (
+   name,
+   contact_first_name,
+   contact_last_name,
+   contact_phone,
+   contact_email,
+   status,
+   main_address_street,
+   main_address_city,
+   main_address_state,
+   main_address_postal_code,
+   billing_same_as_main_flag,
+   billing_address_street,
+   billing_address_city,
+   billing_address_state,
+   billing_address_postal_code,
+   billing_address_country,
+   main_address_country,
+   terms
+)
+SELECT 'CodeForge Solutions', 'Alice', 'Nguyen', '555-1010', 'alice@codeforge.com', 'Active',
+       '123 Innovation Way', 'Austin', 'TX', '73301', 'Y',
+       '123 Innovation Way', 'Austin', 'TX', '73301', 'USA', 'USA', 'Net 30' FROM DUAL
+UNION ALL
+SELECT 'APEX Dynamics', 'Bob', 'Smith', '555-2020', 'bob@apexdynamics.io', 'Active',
+       '456 Apex Blvd', 'San Jose', 'CA', '95112', 'Y',
+       '456 Apex Blvd', 'San Jose', 'CA', '95112', 'USA', 'USA', 'Net 45' FROM DUAL
+UNION ALL
+SELECT 'FileMaker Nexus', 'Carol', 'Lee', '555-3030', 'carol@nexusfm.com', 'Active',
+       '789 Dev Lane', 'Seattle', 'WA', '98101', 'Y',
+       '789 Dev Lane', 'Seattle', 'WA', '98101', 'USA', 'USA', 'Net 30' FROM DUAL
+UNION ALL
+SELECT 'ScriptBridge Inc.', 'David', 'Kim', '555-4040', 'david@scriptbridge.com', 'Active',
+       '321 Logic St', 'Denver', 'CO', '80202', 'Y',
+       '321 Logic St', 'Denver', 'CO', '80202', 'USA', 'USA', 'Net 60' FROM DUAL
+UNION ALL
+SELECT 'FM Innovators', 'Eva', 'Martinez', '555-5050', 'eva@fminnovators.com', 'Active',
+       '654 Solution Rd', 'Chicago', 'IL', '60601', 'Y',
+       '654 Solution Rd', 'Chicago', 'IL', '60601', 'USA', 'USA', 'Net 30' FROM DUAL
+UNION ALL
+SELECT 'APEX Synergy', 'Frank', 'Olsen', '555-6060', 'frank@apexsynergy.com', 'Active',
+       '987 Apex Ave', 'Phoenix', 'AZ', '85001', 'Y',
+       '987 Apex Ave', 'Phoenix', 'AZ', '85001', 'USA', 'USA', 'Net 45' FROM DUAL
+UNION ALL
+SELECT 'FileMaker Grid', 'Grace', 'Turner', '555-7070', 'grace@fmgrid.com', 'Active',
+       '159 Grid St', 'Portland', 'OR', '97201', 'Y',
+       '159 Grid St', 'Portland', 'OR', '97201', 'USA', 'USA', 'Net 30' FROM DUAL
+UNION ALL
+SELECT 'DevStack APEX', 'Henry', 'Wells', '555-8080', 'henry@devstack.io', 'Active',
+       '753 Stack Blvd', 'Dallas', 'TX', '75201', 'Y',
+       '753 Stack Blvd', 'Dallas', 'TX', '75201', 'USA', 'USA', 'Net 60' FROM DUAL
+UNION ALL
+SELECT 'FM Architects', 'Ivy', 'Chen', '555-9090', 'ivy@fmarchitects.com', 'Active',
+       '852 Design Way', 'Atlanta', 'GA', '30301', 'Y',
+       '852 Design Way', 'Atlanta', 'GA', '30301', 'USA', 'USA', 'Net 30' FROM DUAL
+UNION ALL
+SELECT 'APEX Builders', 'Jack', 'Brown', '555-1111', 'jack@apexbuilders.io', 'Active',
+       '951 Apex Circle', 'Miami', 'FL', '33101', 'Y',
+       '951 Apex Circle', 'Miami', 'FL', '33101', 'USA', 'USA', 'Net 45' FROM DUAL
+UNION ALL
+SELECT 'FileMaker Pulse', 'Karen', 'Davis', '555-1212', 'karen@fmpulse.com', 'Active',
+       '147 Pulse Dr', 'Boston', 'MA', '02101', 'Y',
+       '147 Pulse Dr', 'Boston', 'MA', '02101', 'USA', 'USA', 'Net 30' FROM DUAL
+UNION ALL
+SELECT 'APEX Hive', 'Leo', 'Evans', '555-1313', 'leo@apexhive.io', 'Active',
+       '369 Hive St', 'Salt Lake City', 'UT', '84101', 'Y',
+       '369 Hive St', 'Salt Lake City', 'UT', '84101', 'USA', 'USA', 'Net 60' FROM DUAL
+UNION ALL
+SELECT 'FM Velocity', 'Mia', 'Garcia', '555-1414', 'mia@fmvelocity.com', 'Active',
+       '258 Speed Ave', 'Las Vegas', 'NV', '89101', 'Y',
+       '258 Speed Ave', 'Las Vegas', 'NV', '89101', 'USA', 'USA', 'Net 30' FROM DUAL
+UNION ALL
+SELECT 'APEX Orbit', 'Noah', 'Hill', '555-1515', 'noah@apexorbit.io', 'Active',
+       '147 Orbit Rd', 'Minneapolis', 'MN', '55401', 'Y',
+       '147 Orbit Rd', 'Minneapolis', 'MN', '55401', 'USA', 'USA', 'Net 45' FROM DUAL
+UNION ALL
+SELECT 'FM Quantum', 'Olivia', 'Irwin', '555-1616', 'olivia@fmquantum.com', 'Inactive',
+       '369 Quantum Blvd', 'Charlotte', 'NC', '28201', 'Y',
+       '369 Quantum Blvd', 'Charlotte', 'NC', '28201', 'USA', 'USA', 'Net 30' FROM DUAL
+UNION ALL
+SELECT 'APEX Circuit', 'Paul', 'Jones', '555-1717', 'paul@apexcircuit.io', 'Inactive',
+       '753 Circuit St', 'Detroit', 'MI', '48201', 'Y',
+       '753 Circuit St', 'Detroit', 'MI', '48201', 'USA', 'USA', 'Net 60' FROM DUAL
+UNION ALL
+SELECT 'FM LogicWorks', 'Quinn', 'King', '555-1818', 'quinn@fmlogicworks.com', 'Inactive',
+       '951 Logic Ave', 'Philadelphia', 'PA', '19101', 'Y',
+       '951 Logic Ave', 'Philadelphia', 'PA', '19101', 'USA', 'USA', 'Net 30' FROM DUAL
+UNION ALL
+SELECT 'APEX Matrix', 'Ruby', 'Lopez', '555-1919', 'ruby@apexmatrix.io', 'Inactive',
+       '852 Matrix Blvd', 'San Diego', 'CA', '92101', 'Y',
+       '852 Matrix Blvd', 'San Diego', 'CA', '92101', 'USA', 'USA', 'Net 45' FROM DUAL
+UNION ALL
+SELECT 'FM Syntax', 'Sam', 'Miller', '555-2021', 'sam@fmsyntax.com', 'Inactive',
+       '147 Syntax Rd', 'Houston', 'TX', '77001', 'Y',
+       '147 Syntax Rd', 'Houston', 'TX', '77001', 'USA', 'USA', 'Net 30' FROM DUAL
+UNION ALL
+SELECT 'APEX Elevate', 'Tina', 'Nelson', '555-2121', 'tina@apexelevate.io', 'Inactive',
+       '369 Elevate St', 'Orlando', 'FL', '32801', 'Y',
+       '369 Elevate St', 'Orlando', 'FL', '32801', 'USA', 'USA', 'Net 60' FROM DUAL;

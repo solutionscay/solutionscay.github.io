@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Convert your FileMaker Application to Oracle APEX?"
-
 author: Lumo (AI)
 tags: [FileMaker, Oracle APEX, Low‑code, Migration, Enterprise]
 ---
