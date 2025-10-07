@@ -1,24 +1,24 @@
 ---
 layout: post
-title: FileMaker to Oracle APEX (Invoices)Part 2
+title: FileMaker to Oracle APEX (Invoices) Part 2
 author: Jose (Human)
 categories: FileMaker APEX SQL
 ---
 
 <style>
 img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 2rem auto;
-  padding: 10px;
-  background-color: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 12px;
-  box-shadow:
-    0 1px 2px rgba(0, 0, 0, 0.04),
-    0 4px 12px rgba(0, 0, 0, 0.06);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 2rem auto;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.04),
+    0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 </style>
 
@@ -36,7 +36,7 @@ For the Form View, I'll remove the Master Detail functionality. Instead, we'll u
 
 ![](/assets/img/filemaker_to_apex_invoices/fm_clients_form.png)
 
-> APEX provides a Master Detail component using Interactive Grid that we could use to create the Client Form View like in FileMkaer. But I would rather spend our time now learning more basic components and patterns.
+> APEX provides a Master Detail component using **Interactive Grid** that we can use to create the Client Form View, similar to FileMaker. But I would rather spend our time now learning more basic components and patterns.
 
 So, instead of two pages, we're creating three.
 
@@ -46,7 +46,7 @@ So, instead of two pages, we're creating three.
 
 ![](/assets/img/filemaker_to_apex_invoices/invoice_clients_sketch.png)
 
-We'll build Client List and Client Form in this tutorial, and we'll come back to Client Details later.
+We'll build the Client List and Client Form in this tutorial, and we'll revisit Client Details later.
 
 Let's do it. 
 
@@ -72,7 +72,7 @@ Let's create the Client Form first, so when we make the list, we can immediately
 
 ![](/assets/img/filemaker_to_apex_invoices/client_form.png)
 
-> In APEX, the **Form** component provides out of the box CRUD functionality.
+> In APEX, the **Form** component provides out-of-the-box CRUD functionality.
 
 Set the **Page Number** to **11**, the **Name** to **Client Form**, and the **Page Mode** to **Drawer**. For the **Data Source**, set the **Table/View Name** to `CLIENTS`, and click **Next**.
 
@@ -120,7 +120,7 @@ Click on the Dynamic Action pane (⚡). Right-click on **Dialog Closed** and cli
 
 ![](/assets/img/filemaker_to_apex_invoices/clients_classic_report_03.png)
 
-Then, click on the **True** Action and set the **Identification Action**  to **Refresh**. Set the **Selection Type** under **Affected Elements** to **Region**, and select the **Clients List** region from the drop-down list.
+Then, click on the **True** Action and set the **Identification Action** to **Refresh**. Set the **Selection Type** under **Affected Elements** to **Region**, and select the **Clients List** region from the drop-down list.
 
 ![](/assets/img/filemaker_to_apex_invoices/clients_classic_report_04.png)
 
@@ -156,7 +156,7 @@ Do not remove the `CLIENT_ID`; it is set to **Hidden** and APEX will not display
 
 > In Oracle SQL, you concatenate strings using double pipes (`||`) instead of the FileMaker `&` operator. And you declare strings within single quotes instead of double quotes.
 
-Here is the SQL code if you would like to copy it.
+Here is the SQL code, in case you would like to copy it.
 
 ```sql
 select 
@@ -252,7 +252,7 @@ Now let's wrap up this page by adding a **Smart Filters** region with a Search f
 2. Under **Identification**, set **Name** to `P10_STATUS` and the **Type** to **Checkbox Group**.
 3. Under **List of Values**, set the **Type** to **Distinct Values**
 
-The filter uses the **Identification** **Name** to determine the name of the column. If you scroll down the **Filter** pane, you will see under **Source** that APEX automatically sets the **Database Column**  to `STATUS`.
+The filter uses the **Identification** **Name** to determine the name of the column. If you scroll down the **Filter** pane, you will see under **Source** that APEX automatically sets the **Database Column** to `STATUS`.
 
 ![](/assets/img/filemaker_to_apex_invoices/clients_classic_report_21.png)
 
