@@ -29,8 +29,6 @@ In the [previous tutorial](https://solutionscay.github.io/filemaker/apex/sql/202
 
 # Cleaning up the Client Form
 
-## Planning
-
 First, we'll clean the Client Form. Let's take a look at the original FileMaker Layout. We'll recreate the following elements:
 
 1. The Status pop-up menu with the values `Active` and `Inactive`.
