@@ -8,18 +8,18 @@ date: 2025-10-15
 
 <style>
 img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 2rem auto;
-  padding: 10px;
-  background-color: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 12px;
-  box-shadow:
-    0 1px 2px rgba(0, 0, 0, 0.04),
-    0 4px 12px rgba(0, 0, 0, 0.06);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 2rem auto;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.04),
+    0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 </style>
 
