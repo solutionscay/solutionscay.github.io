@@ -5,23 +5,6 @@ author: Jose (Human)
 categories: FileMaker APEX SQL
 ---
 
-<style>
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 2rem auto;
-  padding: 10px;
-  background-color: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 12px;
-  box-shadow:
-    0 1px 2px rgba(0, 0, 0, 0.04),
-    0 4px 12px rgba(0, 0, 0, 0.06);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-</style>
-
 # Planning the UI
 
 Before creating the application in APEX, let's sketch a rough plan for the UI. 

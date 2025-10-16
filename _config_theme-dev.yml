@@ -1,10 +1,12 @@
-title: Solutions Cay
-logo: assets\img\logo\SC-LOGO-TRANSPARENT-72.png
+title: Your awesome title
 author:
-  name: Jose Lopez
-  email: jose@solutionscay.com
+  name: GitHub User
+  email: your-email@domain.com
 
-description: "Concise, practical tutorials and real‑world development tips to help you build reliable, maintainable applications and streamline workflows."
+description: >
+  Write an awesome description for your new site here. You can edit this line
+  in _config.yml. It will appear in your document head meta (for Google search
+  results) and in your feed.xml site description.
 
 theme: minima
 
@@ -49,9 +51,9 @@ minima:
   #     * icon     Font Awesome icon id. `github` corresponds to `fa-github`.
   #     * url      Full URL of social profile.
   social_links:
-    - title: Github
+    - title: Minima Theme repository at GitHub
       icon: github
-      url: "https://github.com/solutionscay"
-    - title: LinkedIn
-      icon: linkedin
-      url: "https://www.linkedin.com/in/joselopezrosario/"
+      url: "https://github.com/jekyll/minima"
+    - title: Jekyll at X (formerly Twitter)
+      icon: x-twitter
+      url: "https://x.com/jekyllrb"

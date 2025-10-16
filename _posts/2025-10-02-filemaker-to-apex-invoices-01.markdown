@@ -5,23 +5,6 @@ author: Jose (Human)
 categories: FileMaker APEX SQL
 ---
 
-<style>
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 2rem auto;
-  padding: 10px;
-  background-color: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 12px;
-  box-shadow:
-    0 1px 2px rgba(0, 0, 0, 0.04),
-    0 4px 12px rgba(0, 0, 0, 0.06);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-</style>
-
 # Introduction
 
 The first step in converting your FileMaker solution to Oracle APEX is to migrate the database. For this tutorial, I am using the Invoice Solutions from the Claris Marketplace. You can download it here: [https://marketplace.claris.com/detail/2000.html](https://marketplace.claris.com/detail/2000.html).
