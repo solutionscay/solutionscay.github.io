@@ -4,6 +4,12 @@ title: About
 permalink: /about/
 ---
 
+<nav aria-label="Breadcrumb">
+  <a href="{{ '/' | relative_url }}">Home</a> » 
+  <a href="{{ '/portfolio/' | relative_url }}">Portfolio</a> » 
+  <span>About</span>
+</nav>
+
 Hello, my name is **Jose**. I am an experienced IT professional who enjoys collaborating with others to solve complex problems. Since 2007, I have assisted executives and business owners in various industries by improving their operations with custom database and application development. Most recently, I have led technical teams of around 12 and 15 members with diverse backgrounds and skill sets.
 
 ### Experience
